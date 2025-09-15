@@ -1,0 +1,31 @@
+{
+    "name": "nwidart/smsgateway",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\SMSGateway\\": "",
+            "Modules\\SMSGateway\\App\\": "app/",
+            "Modules\\SMSGateway\\Database\\Factories\\": "database/factories/",
+            "Modules\\SMSGateway\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\SMSGateway\\Tests\\": "tests/"
+        }
+    }
+}

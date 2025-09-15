@@ -1,0 +1,29 @@
+{
+    "name": "nwidart/notification",
+    "description": "Real-time notification system with Pusher integration",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {}
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Notification\\": "",
+            "Modules\\Notification\\App\\": "app/",
+            "Modules\\Notification\\Database\\Factories\\": "database/factories/",
+            "Modules\\Notification\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Notification\\Tests\\": "tests/"
+        }
+    }
+}

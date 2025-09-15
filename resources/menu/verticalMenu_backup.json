@@ -1,0 +1,255 @@
+{
+    "menu": [
+      {
+        "menuHeader": "Admin Dashboard"
+      },
+      {
+        "url": "/admin",
+        "name": "Dashboard",
+        "slug": "user-dashboard-info"
+      },
+      {
+        "name": "Listing Manage",
+        "slug": "listingmanage",
+        "submenu": [
+          {
+            "url": "/admin/listings/user-all-listings",
+            "name": "All Users Listings",
+            "slug": "users-listings-manage"
+          },
+        
+          {
+            "url": "/admin/listings/report",
+            "name": "Listing Reports",
+            "slug": "listingreports"
+          },
+          {
+            "url": "/admin/listings/report/reason",
+            "name": "Report Reason",
+            "slug": "reportreason"
+          }
+        ]
+      },
+    
+      {
+        "name": "Category",
+        "slug": "categories",
+        "submenu": [
+          {
+            "url": "/admin/categories",
+            "name": "Show All",
+            "slug": "categories.index"
+          },
+          {
+            "url": "/admin/categories/create",
+            "name": "Add New",
+            "slug": "categories.create"
+          }
+        ]
+      },
+      {
+        "name": "Brands",
+        "slug": "brands",
+        "submenu": [
+          {
+            "url": "/admin/brands",
+            "name": "Show All",
+            "slug": "brands.index"
+          },
+          {
+            "url": "/admin/brands/create",
+            "name": "Add New",
+            "slug": "brands.create"
+          }
+        ]
+      },
+      {
+        "name": "Sub Category",
+        "slug": "subcategories",
+        "submenu": [
+          {
+            "url": "/admin/subcategories",
+            "name": "Show All",
+            "slug": "subcategories.index"
+          },
+          {
+            "url": "/admin/subcategories/create",
+            "name": "Add New",
+            "slug": "subcategories.create"
+          }
+        ]
+      },
+      {
+        "name": "Child Categories", 
+        "slug": "childcategories",
+        "submenu": [
+          {
+            "url": "/admin/childcategories",
+            "name": "Show All",
+            "slug": "childcategories.index"
+          },
+          {
+            "url": "/admin/childcategories/create",
+            "name": "Add New",
+            "slug": "childcategories.create"
+          }
+        ]
+      },
+      
+      {
+        "name": "Tags",
+        "slug": "tags",
+        "submenu": [
+          {
+            "url": "/admin/tags",
+            "name": "Show All",
+            "slug": "tags.index"
+          },
+          {
+            "url": "/admin/tags/create",
+            "name": "Add New",
+            "slug": "tags.create"
+          }
+        ]
+      },
+      {
+        "name": "Users",
+        "slug": "app-ecommerce-customer",
+        "submenu": [
+          {
+            "url": "/admin/users",
+            "name": "All Customers",
+            "slug": "app-ecommerce-customer-all"
+          },
+          {
+            "url": "/admin/users/verification",
+            "name": "Identity Verify Requests",
+            "slug": "app-Identity-verify-requests"
+          },
+          {
+            "url": "/admin/users/trash",
+            "name": "Trash List",
+            "slug": "trashlist"
+          }          
+        ]
+      },
+      {
+        "name": "Support",
+        "slug": "support",
+        "submenu": [
+          {
+            "url": "admin/support-ticket/department",
+            "name": "Departments",
+            "slug": "support-tickets-department"
+          },
+          {
+            "url": "admin/support-ticket/tickets",
+            "name": "Support Tickets",
+            "slug": "support-tickets"
+          }
+        ]
+      },
+      {
+        "name": "Promotions",
+        "slug": "promotions",
+        "submenu": [
+          {
+            "url": "admin/promotions/packages",
+            "name": "Promotions Packages",
+            "slug": "promotions"
+          },
+          {
+            "url": "admin/promotions/requests",
+            "name": "Promotions Packages Requests",
+            "slug": "promotions-requests"
+          }
+          
+        ]
+      },
+      {
+        "name": "Wallets",
+        "slug": "wallets",
+        "submenu": [
+          {
+            "url": "admin/wallet/lists",
+            "name": "Wallets Lists",
+            "slug": "walletlists"
+          },
+          {
+            "url": "admin/wallet/history/records",
+            "name": "Wallets History",
+            "slug": "wallethistory"
+          },
+          {
+            "url": "admin/wallet/wallet/deposit-settings",
+            "name": "Wallets Settings",
+            "slug": "walletsettings"
+          }
+        ]
+      },
+      {
+        "name": "Email Settings",
+        "slug": "emailsettings",
+        "submenu": [
+          {
+            "url": "admin/email-settings/",
+            "name": "SMTP Settings",
+            "slug": "smptsettings"
+          }
+        ]
+      },
+      {
+        "name": "Settings",
+        "slug": "app-ecommerce-settings",
+        "submenu": [
+          {
+            "url": "admin/general-settings/site-identity",
+            "name": "Store details",
+            "slug": "app-ecommerce-settings-details"
+          },
+          {
+            "url": "admin/general-settings/color-settings",
+            "name": "Color Settings",
+            "slug": "app-ecommerce-color-settings"
+          },
+            {
+            "url": "admin/general-settings/basic-settings",
+            "name": "Basic Settings",
+            "slug": "app-ecommerce-basic-settings"
+          },
+            {
+
+            "url": "admin/general-settings/register-page",
+            "name": "Login Register Settings",
+            "slug": "app-ecommerce-login-register-settings"
+          },
+
+            {
+
+            "url": "admin/general-settings/listing-create-page/settings",
+            "name": "Listing Create Settings",
+            "slug": "app-ecommerce-login-listing-create-page"
+          },
+
+            {
+
+            "url": "sms-gateway-settings/view",
+            "name": "SMS Gateway",
+            "slug": "app-ecommerce-smsgateway-settings"
+          },
+          
+          {
+            "url": "admin/map-settings/add-page",
+            "name": "Google Map Settings",
+            "slug": "app-ecommerce-google-map-settings"
+          },
+          {
+            "url": "admin/integrations-manage",
+            "name": "Integrations",
+            "slug": "app-ecommerce-integrations-manage"
+          }
+        
+        ]
+      }
+    ]
+  }

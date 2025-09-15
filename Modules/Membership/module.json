@@ -1,0 +1,68 @@
+{
+    "name": "Membership",
+    "alias": "membership",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Membership\\app\\Providers\\MembershipServiceProvider"
+    ],
+    "files": [],
+    "xgMetaData": {
+        "plugin_type": "external",
+        "pageBuilderAddon": [
+            {
+                "addon": "Modules\\Membership\\app\\Http\\PageBuilder\\Addons\\Membership"
+            }
+        ],
+        "admin_settings": {
+            "show_admin_landlord": true,
+            "show_admin_tenant": false,
+            "menu_item": [
+                {
+                    "id" : "membership-settings",
+                    "label": "Membership",
+                    "route": null,
+                    "parent": null,
+                    "icon": "las la-list-alt",
+                    "permissions": [""]
+                },
+                {
+                    "id" : "membership-type",
+                    "label": "Membership Type",
+                    "route": "admin.membership.type.all",
+                    "parent": null,
+                    "permissions": ["membership-type-list"]
+                },
+                {
+                    "id" : "all-membership",
+                    "label": "All Memberships",
+                    "route": "admin.membership.all",
+                    "parent": null,
+                    "permissions": ["membership-list"]
+                },
+                {
+                    "id" : "user-membership",
+                    "label": "User Memberships",
+                    "route": "admin.user.membership.all",
+                    "parent": null,
+                    "permissions": ["user-membership-list"]
+                },
+                {
+                    "id" : "membership-enquiry",
+                    "label": "Enquiry",
+                    "route": "admin.enquiry.form.all",
+                    "parent": null,
+                    "permissions": ["enquiry-form-list"]
+                },
+                {
+                    "id" : "membership-settings-list",
+                    "label": "Membership Settings",
+                    "route": "admin.membership.settings",
+                    "parent": null,
+                    "permissions": ["membership-settings"]
+                }
+            ]
+        }
+    }
+}

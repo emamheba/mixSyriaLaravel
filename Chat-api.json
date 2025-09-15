@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "4a4d7078-1686-4889-810e-6f675c3daae3",
+		"name": "Chat",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18405291"
+	},
+	"item": [
+		{
+			"name": "get all chats",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/v1/user/chats",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"chats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get chat",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/v1/user/chats/53",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"chats",
+						"53"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New chat",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "D3vNDA9xCP7LMwwZrKKeleMjrBI0fHWjMhfH7tKKaac135bb",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "recipient_id",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "message",
+							"value": "Hello, is this item still available?",
+							"type": "text"
+						},
+						{
+							"key": "listing_id",
+							"value": "45",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Zainon/Downloads/sofa.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api/v1/user/chats",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"chats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "send message",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "message",
+							"value": "Hello, is this item still available?",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api/v1/user/chats/{chat_id}/messages",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"chats",
+						"{chat_id}",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "messages seen",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/v1/user/chats/messages/{message_id}/seen",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"chats",
+						"messages",
+						"{message_id}",
+						"seen"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

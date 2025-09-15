@@ -1,0 +1,28 @@
+{
+    "name": "Chat",
+    "alias": "chat",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Chat\\app\\Providers\\ChatServiceProvider"
+    ],
+    "files": [],
+    "xgMetaData": {
+        "plugin_type": "external",
+        "admin_settings": {
+            "show_admin_landlord": true,
+            "show_admin_tenant": false,
+            "menu_item": [
+                {
+                    "id" : "live-chat-settings",
+                    "label": "Chat Settings",
+                    "route": "admin.pusher.settings",
+                    "parent": null,
+                    "icon": "lab la-rocketchat",
+                    "permissions": ["live-chat-settings"]
+                }
+            ]
+        }
+    }
+}

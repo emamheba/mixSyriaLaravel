@@ -1,0 +1,49 @@
+{
+    "name": "Wallet",
+    "alias": "wallet",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Wallet\\app\\Providers\\WalletServiceProvider"
+    ],
+    "files": [],
+    "xgMetaData": {
+        "plugin_type": "external",
+        "admin_settings": {
+            "show_admin_landlord": true,
+            "show_admin_tenant": false,
+            "menu_item": [
+                {
+                    "id" : "user-wallet-system",
+                    "label": "Wallet",
+                    "route": null,
+                    "parent": null,
+                    "icon": "las la-wallet",
+                    "permissions": ""
+                },
+                {
+                    "id" : "user-wallet-system-lists",
+                    "label": "Wallet Lists",
+                    "route": "admin.wallet.lists",
+                    "parent": null,
+                    "permissions": ["deposit-list"]
+                },
+                {
+                    "id" : "user-wallet-system-history",
+                    "label": "Wallet History",
+                    "route": "admin.wallet.history",
+                    "parent": null,
+                    "permissions": ["deposit-history-details"]
+                },
+                {
+                    "id" : "user-wallet-system-deposit-settings",
+                    "label": "Wallet Settings",
+                    "route": "admin.wallet.deposit.settings",
+                    "parent": null,
+                    "permissions": ["deposit-settings"]
+                }
+            ]
+        }
+    }
+}

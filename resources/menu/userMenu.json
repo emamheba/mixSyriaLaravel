@@ -1,0 +1,101 @@
+{
+  "menu": [
+    {
+      "menuHeader": "User Dashboard"
+    },
+    {
+      "url": "/user",
+      "name": "Dashboard",
+      "slug": "user-dashboard-info"
+    },
+
+    {
+        "name": "My Listings",
+        "slug": "listings",
+        "submenu": [
+            {
+                "url": "/user/listing/all",
+                "name": "Show All",
+                "slug": "user.all.listing"
+            },
+            {
+                "url": "/user/listing/add",
+                "name": "Add New",
+                "slug": "user.add.listing"
+            }
+        ]
+    },
+    {
+      "url": "/user/membership/all",
+      "name": "Membership",
+      "slug": "membership"
+    },
+    {
+      "url": "/user/wallet-history",
+      "name": "Wallet",
+      "slug": "wallet-history.blade"
+    },
+    {
+      "url": "/user/member/live/chat",
+      "name": "Chat",
+      "slug": "app-ecommerce-referrals"
+    },
+    {
+      "url": "/user/support-ticket/ticket",
+      "name": "Support tickets",
+      "slug": "app-ecommerce-referrals"
+    },
+     {
+      "url": "/",
+      "name": "Favourite",
+      "slug": "app-ecommerce-referrals"
+    },
+    {
+      "url": "/",
+      "name": "Enquiries",
+      "slug": "app-ecommerce-referrals"
+    },
+    {
+      "url": "user/profile/settings",
+      "name": "Profile",
+      "slug": "user-profile"
+  },
+
+    {
+      "name": "Settings",
+      "slug": "app-ecommerce-settings",
+      "submenu": [
+        {
+          "url": "app/ecommerce/settings/details",
+          "name": "Store details",
+          "slug": "app-ecommerce-settings-details"
+        },
+        {
+          "url": "app/ecommerce/settings/payments",
+          "name": "Payments",
+          "slug": "app-ecommerce-settings-payments"
+        },
+        {
+          "url": "app/ecommerce/settings/checkout",
+          "name": "Checkout",
+          "slug": "app-ecommerce-settings-checkout"
+        },
+        {
+          "url": "app/ecommerce/settings/shipping",
+          "name": "Shipping & Delivery",
+          "slug": "app-ecommerce-settings-shipping"
+        },
+        {
+          "url": "app/ecommerce/settings/locations",
+          "name": "Locations",
+          "slug": "app-ecommerce-settings-locations"
+        },
+        {
+          "url": "app/ecommerce/settings/notifications",
+          "name": "Notifications",
+          "slug": "app-ecommerce-settings-notifications"
+        }
+      ]
+    }
+  ]
+}

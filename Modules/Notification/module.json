@@ -1,0 +1,28 @@
+{
+    "name": "Notification",
+    "alias": "notification",
+    "description": "Real-time notification system with Pusher integration",
+    "keywords": ["notification", "real-time", "pusher"],
+    "priority": 0,
+    "providers": [
+        "Modules\\Notification\\App\\Providers\\NotificationServiceProvider"
+    ],
+    "files": [],
+    "xgMetaData": {
+        "plugin_type": "external",
+        "admin_settings": {
+            "show_admin_landlord": true,
+            "show_admin_tenant": false,
+            "menu_item": [
+                {
+                    "id": "notification-settings",
+                    "label": "Notification Settings",
+                    "route": "admin.notification.settings",
+                    "parent": null,
+                    "icon": "las la-bell",
+                    "permissions": ["notification-settings"]
+                }
+            ]
+        }
+    }
+}
